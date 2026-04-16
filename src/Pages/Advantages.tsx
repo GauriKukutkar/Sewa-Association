@@ -14,12 +14,12 @@ import { useNavigate } from "react-router-dom";
 const Advantages: React.FC = () => {
 
     
-     const scrollToSection = (id: string) => {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+    //  const scrollToSection = (id: string) => {
+    //   const section = document.getElementById(id);
+    //   if (section) {
+    //     section.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // };
     const navigate = useNavigate();
 
   return (

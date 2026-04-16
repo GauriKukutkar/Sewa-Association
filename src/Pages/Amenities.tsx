@@ -2,28 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import project2 from "../assets/project2.jpg"
 
-const amenities = [
-  {
-    title: "Grand Entrance Gate",
-    desc: "A well-designed entrance that enhances security and gives a premium first impression.",
-    icon: "🏡",
-  },
-  {
-    title: "Street Lighting",
-    desc: "Properly installed street lights ensuring safety, visibility, and modern infrastructure.",
-    icon: "💡",
-  },
-  {
-    title: "Cement Roads",
-    desc: "Durable and well-planned cement roads for smooth connectivity across the project.",
-    icon: "🛣️",
-  },
-  {
-    title: "Roadside Plantation",
-    desc: "Green surroundings with planned plantation for a peaceful and eco-friendly environment.",
-    icon: "🌳",
-  },
-];
 
 const Amenities: React.FC = () => {
   return (
