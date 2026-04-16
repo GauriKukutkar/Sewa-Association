@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 // import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
+// import project2 from "../assets/project2.jpg";
+// import project3 from "../assets/project3.jpg";
 import projects from "../assets/projects.jpg"; 
 import project8 from "../assets/project8.jpg";
 import { useNavigate } from "react-router-dom";
@@ -23,27 +23,27 @@ const ongoingProject = {
 ],
 };
 
-const completedProjects = [
-  {
-    name: "SEWA PRIME",
-    location: "Dhamna",
-    image: project2,
-  },
-  {
-    name: "SEWA PRIME – I",
-    location: "Ghogali",
-    image: project3,
-  },
-];
+// const completedProjects = [
+//   {
+//     name: "SEWA PRIME",
+//     location: "Dhamna",
+//     image: project2,
+//   },
+//   {
+//     name: "SEWA PRIME – I",
+//     location: "Ghogali",
+//     image: project3,
+//   },
+// ];
 
 const Projects: React.FC = () => {
 
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToSection = (id: string) => {
+  //   const section = document.getElementById(id);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
   const navigate = useNavigate();
 
   return (
