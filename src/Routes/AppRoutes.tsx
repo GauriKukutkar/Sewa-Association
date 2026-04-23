@@ -7,10 +7,11 @@ import Amenities from "../Pages/Amenities";
 import Contact from "../Pages/contact";
 import BookVisit from "../Pages/BookVisit";
 import Advantages from "../Pages/Advantages";
-
+import ScrollToTop from "../Components/ScrollToTop";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+     <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />

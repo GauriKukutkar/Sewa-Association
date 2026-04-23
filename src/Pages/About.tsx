@@ -520,7 +520,7 @@ const navigate = useNavigate();
     <div className="w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
       <iframe
         className="w-full h-full"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        src="https://youtu.be/pJpUeIPzQpc?si=OmwY6o1o6aL_BrTd"
         title="Sewa Prime Video"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -639,7 +639,7 @@ const navigate = useNavigate();
 
         <iframe
           className="w-full h-[260px] sm:h-[360px] md:h-[420px]"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          src="https://youtu.be/T2MAfv0nNxs?si=wLa-5uOGJcgm0-QN"
           title="Sewa Prime Video"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
