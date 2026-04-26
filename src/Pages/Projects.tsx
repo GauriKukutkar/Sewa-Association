@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 import projects from "../assets/projects.jpg"; 
 import project8 from "../assets/project8.jpg";
 import { useNavigate } from "react-router-dom";
-import sewaprime from "../assets/sewa1.mp4";
-import sewaprime1 from "../assets/sewa2.mp4";
 
 
 const ongoingProject = {
@@ -226,13 +224,10 @@ const Projects: React.FC = () => {
         viewport={{ once: true }}
         className="relative rounded-2xl overflow-hidden shadow-xl group"
       >
-
-        <video
-          controls
-          className="w-full h-[300px] md:h-[400px] lg:h-[450px] object-cover"
-        >
-          <source src={sewaprime} type="video/mp4" />
-        </video>
+<iframe
+  src="https://drive.google.com/file/d/186DzPTi7abkDn1BO8U8VChJToxs6Vjoo/preview"
+  className="w-full h-[300px] md:h-[400px] lg:h-[450px] rounded-xl"
+></iframe>
 
         {/* LIGHT HOVER EFFECT */}
         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition pointer-events-none"></div>
@@ -259,12 +254,10 @@ const Projects: React.FC = () => {
         className="relative rounded-2xl overflow-hidden shadow-xl group"
       >
 
-        <video
-          controls
-          className="w-full h-[300px] md:h-[400px] lg:h-[450px] object-cover"
-        >
-          <source src={sewaprime1} type="video/mp4" />
-        </video>
+       <iframe
+  src="https://drive.google.com/file/d/1JXtErHutfjAUIHIXO1zmImD8KvczN1Ck/preview"
+  className="w-full h-[300px] md:h-[400px] lg:h-[450px] rounded-xl"
+></iframe>
 
         {/* OPTIONAL HOVER OVERLAY */}
         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition pointer-events-none"></div>

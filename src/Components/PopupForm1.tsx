@@ -17,7 +17,7 @@ const PopupForm1 = ({ onClose }: Props) => {
   return (
     <div className="fixed inset-0 bg-black/10 backdrop-blur-sm flex justify-center items-center z-50 px-4">
 
-      <div className="bg-gradient-to-b mt-12 from-black to-[#1a1a1a] p-8 rounded-2xl w-[90%] md:w-[420px] shadow-2xl text-center relative border border-yellow-500/20
+      <div className="bg-gradient-to-b mt-20 from-black to-[#1a1a1a] p-8 rounded-2xl w-[90%] md:w-[420px] shadow-2xl text-center relative border border-yellow-500/20
       transform animate-popup">
 
         {/* Close */}

@@ -516,17 +516,17 @@ const navigate = useNavigate();
 <section className="py-24 bg-white px-6">
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-    {/* 🎥 VIDEO SIDE */}
-    <div className="w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
-      <iframe
-        className="w-full h-full"
-        src="https://youtu.be/pJpUeIPzQpc?si=OmwY6o1o6aL_BrTd"
-        title="Sewa Prime Video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
+   {/* 🎥 VIDEO SIDE */}
+<div className="w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
+  <iframe
+    className="w-full h-full"
+    src="https://www.youtube.com/embed/pJpUeIPzQpc"
+    title="Sewa Prime Video"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
 
     {/* 📝 TEXT SIDE */}
     <motion.div
@@ -561,10 +561,19 @@ const navigate = useNavigate();
       </p>
 
       {/* CTA */}
-      <button onClick={() => navigate("/projects")} className="px-7 py-3 bg-yellow-500 text-black font-medium rounded-md 
-      hover:scale-105 transition shadow-[0_0_25px_rgba(202,162,83,0.4)]">
-        Explore Project →
-      </button>
+      <div className="flex items-center gap-6">
+
+        <button onClick={() => navigate("/projects")} className="px-7 py-3 bg-yellow-500 text-black font-medium rounded-md 
+        hover:scale-105 transition shadow-[0_0_25px_rgba(202,162,83,0.4)]">
+          View Project →
+        </button>
+
+        {/* Secondary subtle CTA */}
+        <button  onClick={() => navigate("/bookvisit")} className="text-black font-medium border-b border-black hover:border-yellow-500 hover:text-yellow-500 transition">
+          Book Site Visit
+        </button>
+
+      </div>
 
     </motion.div>
 
@@ -638,13 +647,13 @@ const navigate = useNavigate();
       <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
 
         <iframe
-          className="w-full h-[260px] sm:h-[360px] md:h-[420px]"
-          src="https://youtu.be/T2MAfv0nNxs?si=wLa-5uOGJcgm0-QN"
-          title="Sewa Prime Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+  className="w-full h-[260px] sm:h-[360px] md:h-[420px]"
+  src="https://www.youtube.com/embed/T2MAfv0nNxs"
+  title="Sewa Prime Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
 
         {/* Subtle Overlay for Premium Feel */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>

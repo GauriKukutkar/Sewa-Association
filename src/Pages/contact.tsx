@@ -133,12 +133,18 @@ const Contact: React.FC = () => {
             {/* INFO */}
             <div className="space-y-5 text-gray-300">
 
-              <div>
-                <p className="text-gray-500 text-sm">Phone</p>
-                <p className="font-semibold text-white">
-                  +91 7744961861
-                </p>
-              </div>
+             <div>
+  <p className="text-gray-500 text-sm">Phone</p>
+  <p className="font-semibold text-white">
+    <a href="tel:+917744961861" className="hover:text-yellow-400 transition">
+      +91 7744961861
+    </a>
+    <span className="mx-2 text-gray-400">/</span>
+    <a href="tel:+917744961862" className="hover:text-yellow-400 transition">
+      +91 7744961862
+    </a>
+  </p>
+</div>
 
               <div>
                 <p className="text-gray-500 text-sm">Email</p>

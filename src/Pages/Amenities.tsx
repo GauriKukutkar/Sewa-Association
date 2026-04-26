@@ -312,7 +312,7 @@ const Amenities: React.FC = () => {
             viewport={{ once: true }}
             className="text-yellow-400 text-4xl md:text-5xl font-bold"
           >
-            ₹2100<span className="text-lg text-gray-400">/sq.ft</span>
+            ₹2100 - ₹2200<span className="text-lg text-gray-400"> / sq.ft</span>
           </motion.div>
 
           <p className="text-gray-500 text-sm mt-2">
@@ -369,7 +369,7 @@ const Amenities: React.FC = () => {
 
       {[
         {
-          value: "₹2100/sq.ft",
+          value: "₹2100 - ₹2200/sq.ft",
           label: "Competitive Pricing",
         },
         {
