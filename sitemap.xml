@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://sevainfrastructure.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/about</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/advantages</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/completedprojects</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/bookvisit</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/cookie-policy</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/amenities</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/terms-and-conditions</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/contact</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
