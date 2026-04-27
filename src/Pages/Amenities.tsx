@@ -1,9 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
 import project2 from "../assets/project2.jpg"
+import project7 from "../assets/project7.jpg";
+import project3 from "../assets/project3.jpg";
+import gate from "../assets/gate.jpg";
+import project4 from "../assets/project4.jpg";
+
+import {
+  Road,
+  Zap,
+  Droplet,
+  ShieldCheck,
+  Trees,
+  Map,
+  Lightbulb,
+  Waves
+} from "lucide-react";
 
 
 const Amenities: React.FC = () => {
+
+  const floating = {
+  animate: { y: [0, -6, 0] },
+  transition: {
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut" as const,
+  },
+};
+
   return (
     <>
 
@@ -213,6 +238,172 @@ const Amenities: React.FC = () => {
 
   </div>
 
+</section>
+{/* 🌿 PREMIUM ANIMATED AMENITIES */}
+<section className="py-28 bg-[#FAFAF7] px-6 overflow-hidden">
+  <div className="max-w-6xl mx-auto text-center">
+
+    {/* HEADING */}
+    <p className="text-[#8A8F6A] uppercase tracking-[5px] text-xs mb-4">
+      Infrastructure
+    </p>
+
+    <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-6 leading-snug">
+      Top of the Line Amenities <br />
+      <span className="text-[#8A8F6A]">& Infrastructure</span>
+    </h2>
+
+    <p className="text-gray-500 max-w-xl mx-auto mb-16 text-sm leading-relaxed">
+      Designed with precision and built for long-term comfort —
+      every element reflects quality, planning, and future-ready living.
+    </p>
+
+    {/* GRID */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-y-14 gap-x-8">
+
+      {[
+        { icon: Road, title: "Wide Roads", sub: "(12/9 M)" },
+        { icon: Zap, title: "Underground", sub: "Electricity" },
+        { icon: Waves, title: "Drainage & Sewer", sub: "System" },
+        { icon: Lightbulb, title: "Decorative", sub: "Street Lights" },
+        { icon: Droplet, title: "Water Supply", sub: "" },
+        { icon: ShieldCheck, title: "Secured", sub: "Community" },
+        { icon: Map, title: "Demarcated", sub: "Plots" },
+        { icon: Trees, title: "Garden & Roadside", sub: "Plantation" },
+      ].map((item, i) => {
+        const Icon = item.icon;
+
+        return (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.1 }}
+            viewport={{ once: true }}
+            className="group flex flex-col items-center text-center"
+          >
+
+            {/* ICON CONTAINER */}
+            <motion.div
+              {...floating}
+              className="relative w-20 h-20 flex items-center justify-center rounded-full border border-[#DADFC8] bg-[#F4F6ED] group-hover:scale-110 transition duration-300"
+            >
+
+              {/* PULSE RING */}
+              <motion.div
+                className="absolute inset-0 rounded-full border border-[#C9CFB2]"
+                animate={{
+                  scale: [1, 1.4],
+                  opacity: [0.4, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  delay: i * 0.3,
+                }}
+              />
+
+              {/* ICON */}
+              <Icon className="w-7 h-7 text-[#7A805B]" strokeWidth={1.5} />
+
+            </motion.div>
+
+            {/* TEXT */}
+            <p className="mt-4 text-sm text-gray-800 font-medium leading-tight">
+              {item.title}
+            </p>
+
+            {item.sub && (
+              <p className="text-xs text-gray-500">
+                {item.sub}
+              </p>
+            )}
+
+          </motion.div>
+        );
+      })}
+
+    </div>
+
+  </div>
+
+  {/* BACKGROUND FLOATING GLOW */}
+  <motion.div
+    className="absolute top-10 left-10 w-40 h-40 bg-[#E9EEDC] rounded-full blur-3xl opacity-40"
+    animate={{ y: [0, 40, 0] }}
+    transition={{ duration: 8, repeat: Infinity }}
+  />
+
+  <motion.div
+    className="absolute bottom-10 right-10 w-52 h-52 bg-[#F0F3E6] rounded-full blur-3xl opacity-40"
+    animate={{ y: [0, -40, 0] }}
+    transition={{ duration: 10, repeat: Infinity }}
+  />
+
+</section>
+
+ {/* AMENITIES */}
+<section className="py-28 bg-white px-6">
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+      <p className="text-yellow-500 uppercase tracking-[5px] text-xs mb-4">
+        Amenities
+      </p>
+
+      <h2 className="text-3xl md:text-5xl font-semibold text-black">
+        Infrastructure That <span className="text-yellow-500">Adds Value</span>
+      </h2>
+    </div>
+
+    {/* GRID */}
+    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+      {[
+        { name: "Entrance Gate", img: gate },
+        { name: "Street Lights", img: project4 },
+        { name: "Cement Roads", img: project3 },
+        { name: "Plantation", img: project7 },
+      ].map((item, i) => (
+
+        <div
+          key={i}
+          className="relative group overflow-hidden rounded-2xl h-[260px]"
+        >
+
+          {/* IMAGE */}
+          <img
+            src={item.img}
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
+
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-500"></div>
+
+          {/* CONTENT */}
+          <div className="absolute bottom-6 left-6">
+
+            {/* NUMBER */}
+            <p className="text-white/50 text-sm mb-1">
+              {`0${i + 1}`}
+            </p>
+
+            {/* TITLE */}
+            <h3 className="text-white text-lg font-semibold">
+              {item.name}
+            </h3>
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
 </section>
 
       {/* 💰 VALUE IMPACT SECTION */}
