@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://sevainfrastructure.com/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/about</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/advantages</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/amenities</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/completedprojects</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/bookvisit</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/contact</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Legal / low priority -->
+
+  <url>
+    <loc>https://sevainfrastructure.com/privacy-policy</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/terms-and-conditions</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sevainfrastructure.com/cookie-policy</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
