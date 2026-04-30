@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImg from "../assets/about.jpg";
+import aboutImg from "../assets/projectt.png";
 import service1 from "../assets/service2.jpg";
-import project1 from "../assets/project1.jpg";
+import project1 from "../assets/about2.png";
 import project7 from "../assets/project7.jpg";
 import project3 from "../assets/project3.jpg";
 import gate from "../assets/gate.jpg";
 import project4 from "../assets/project4.jpg";
-import project2 from "../assets/project2.jpg";
+import project2 from "../assets/gatttee.png";
 import { useNavigate } from "react-router-dom";
 
 
@@ -112,6 +112,7 @@ const Advantages: React.FC = () => {
   </motion.div> */}
 
 </section>
+
 <section className="relative py-28 bg-black text-white px-6">
 
   <div className="max-w-6xl mx-auto">

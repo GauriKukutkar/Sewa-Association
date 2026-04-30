@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutImg from "../assets/about.jpg";
+import AboutImg from "../assets/about1.png";
 import Hero from "../assets/hero.jpg"
 // import heroVideo from "../assets/hero-video.mp4";
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
+import project1 from "../assets/dhama.png";
+import project2 from "../assets/gateee.png";
+import project3 from "../assets/home.png";
 import project7 from "../assets/project7.jpg";
 import project4 from "../assets/project4.jpg";
 import gate from "../assets/gate.jpg";

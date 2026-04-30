@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 // import Hero from "../assets/hero.jpg"
-import heroVideo from "../assets/hero-video.mp4";
-import About from "../assets/about.jpg"
-import project1 from "../assets/project1.jpg"
+import heroVideo from "../assets/hero_home.mp4";
+import About from "../assets/about1.png"
+import project1 from "../assets/about2.png"
 import project2 from "../assets/project2.jpg"
 import project3 from "../assets/project3.jpg"
 import project10 from "../assets/project10.jpg"

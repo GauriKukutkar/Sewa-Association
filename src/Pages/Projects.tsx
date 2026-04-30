@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 // import project1 from "../assets/project1.jpg";
 // import project2 from "../assets/project2.jpg";
 // import project3 from "../assets/project3.jpg";
-import projects from "../assets/projects.jpg"; 
-import project8 from "../assets/project8.jpg";
+import projects from "../assets/gateee.png"; 
+import project8 from "../assets/about2.png";
 import { useNavigate } from "react-router-dom";
 
 
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
     <>
      {/* 🚀 HERO - PROJECTS */}
 {/* 🚀 HERO - PROJECTS */}
-<section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center text-white overflow-hidden">
+<section className="relative mt-10 h-[85vh] md:h-[95vh] flex items-center justify-center text-white overflow-hidden">
 
   {/* 🌄 BACKGROUND IMAGE */}
   <motion.img
