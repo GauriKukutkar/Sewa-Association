@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 // import Hero from "../assets/hero.jpg"
-import heroVideo from "../assets/hero-video.mp4";
+// import heroVideo from "../assets/hero-video.mp4";
 import About from "../assets/about1.png"
 import project1 from "../assets/about2.png"
 import project2 from "../assets/project2.jpg"
@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import hero from "../assets/gateee.png";
 
 const services = [
   {
@@ -176,30 +177,30 @@ const navigate = useNavigate();
 
   return (
     <>
-
 <section className="relative mt-10 h-[65vh] md:h-[80vh] lg:h-screen overflow-hidden text-white">
 
-  {/* 🎬 VIDEO BACKGROUND */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
+  {/* 🌄 BACKGROUND IMAGE WITH ZOOM EFFECT */}
+  <motion.img
+    src={hero}   
+    initial={{ scale: 1.15 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 6, ease: "easeOut" }}
     className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src={heroVideo} type="video/mp4" />
-  </video>
+  />
 
-  {/* ✨ LIGHT GRADIENT (NO HEAVY DARK) */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+  {/* 🌑 LIGHT DARK OVERLAY */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  {/* ✨ TOP/BOTTOM GRADIENT */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
   {/* 🔥 SIDE FADE (cinematic depth) */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
 
-  {/* 🌟 CONTENT (BOTTOM LEFT — PREMIUM FEEL) */}
+  {/* 🌟 CONTENT (BOTTOM LEFT — PREMIUM) */}
   <div className="absolute bottom-10 ml-14 md:bottom-16 left-6 md:left-12 z-10 max-w-md">
 
-    {/* Minimal Label */}
+    {/* Label */}
     <motion.p
       initial={{ opacity: 0, x: -30 }}
       animate={{ opacity: 1, x: 0 }}
@@ -209,17 +210,17 @@ const navigate = useNavigate();
       Welcome to
     </motion.p>
 
-    {/* Headline */}
+    {/* Heading */}
     <motion.h1
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
     >
-    <span className="text-yellow-400"> Sewa Infrastructure</span>
+      <span className="text-yellow-400">Sewa Infrastructure</span>
     </motion.h1>
 
-    {/* Optional subtle line */}
+    {/* Animated line */}
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "60px" }}
@@ -229,18 +230,13 @@ const navigate = useNavigate();
 
   </div>
 
-  {/* 🎯 FLOATING CTA (OPTIONAL BUT 🔥) */}
-  {/* <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1 }}
-    className="absolute bottom-10 right-6 md:right-12 z-10"
-  >
-    <button className="px-6 py-3 bg-yellow-500 text-black text-sm font-medium rounded-md 
-    hover:scale-105 transition shadow-[0_0_25px_rgba(202,162,83,0.5)]">
-      Explore → 
-    </button>
-  </motion.div> */}
+  {/* ✨ FLOATING LIGHT / GLOW EFFECT */}
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: [0.2, 0.5, 0.2] }}
+    transition={{ duration: 4, repeat: Infinity }}
+    className="absolute top-10 left-10 w-40 h-40 bg-yellow-400/20 blur-3xl rounded-full"
+  />
 
 </section>
 

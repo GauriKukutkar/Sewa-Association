@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
 
   return (
     <>
-     {/* 🚀 HERO - PROJECTS */}
+  
 {/* 🚀 HERO - PROJECTS */}
 <section className="relative mt-10 h-[85vh] md:h-[95vh] flex items-center justify-center text-white overflow-hidden">
 
